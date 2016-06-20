@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Strings related to Layouts -->
+
+    <string name="app_name">Popular Movies</string>
+    <string name="textview_overview">Plot Synopsis:</string>
+    <string name="textview_rating">User Rating:</string>
+    <string name="textview_rdate">Release Date:</string>
+    <string name="imageview_thumbnail">Movie Poster Thumbnail</string>
+    <string name="grid_item_imageview">Movie Poster</string>
+
+
+    <!-- Strings related to Settings -->
+
+    <string name="title_activity_settings">Settings</string>
+    <string name="action_share">Share</string>
+    <string name="action_settings">Settings</string>
+    <string name="pref_header_general">Sort Movies</string>
+    <string name="pref_title_sort_movies">Change Sorting Method</string>
+    <string name="pref_sort_by_types">Sort Movies By:</string>
+    <string name="pref_sort_by_types_default">popular</string>
+    <string name="pref_sort_by_popularity">popular</string>
+    <string name="pref_sort_by_rating">top_rated</string>
+    <string name="pref_sort_by_label_popularity">Most Popular</string>
+    <string name="pref_sort_by_label_rating">Most Top-rated</string>
+    <string name="pref_sort_movie_key">sort_movie</string>
+
+</resources>

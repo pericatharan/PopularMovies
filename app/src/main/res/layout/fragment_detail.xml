@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/scrollView" >
+
+    <RelativeLayout
+        android:id="@+id/rlayout_detail"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textview_title"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:padding="10dp"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageview_thumbnail"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:contentDescription="@string/imageview_thumbnail"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textview_title"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_container_overview"
+            tools:text="Plot summary of movie..."
+            android:inputType="none"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:padding="10dp"
+            android:layout_below="@+id/imageview_thumbnail"
+            android:layout_toRightOf="@+id/textview_overview"
+            android:layout_toEndOf="@+id/textview_overview"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/textview_overview"
+            android:id="@+id/textview_overview"
+            android:padding="10dp"
+            android:layout_below="@+id/imageview_thumbnail"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/textview_rating"
+            android:id="@+id/textview_rating"
+            android:padding="10dp"
+            android:layout_below="@+id/textview_container_overview" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_container_rating"
+            android:inputType="none"
+            android:layout_below="@+id/textview_container_overview"
+            android:padding="10dp"
+            tools:text="7.2"
+            android:layout_toRightOf="@+id/textview_rating"
+            android:layout_alignRight="@+id/textview_container_rdate"
+            android:layout_alignEnd="@+id/textview_container_rdate"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/textview_rdate"
+            android:id="@+id/textview_rdate"
+            android:padding="10dp"
+            android:layout_below="@+id/textview_rating" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_container_rdate"
+            android:layout_below="@+id/textview_container_rating"
+            android:inputType="none"
+            android:padding="10dp"
+            tools:text="10-1-2015"
+            android:layout_toEndOf="@+id/textview_rdate"
+            android:layout_toRightOf="@+id/textview_rdate"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </RelativeLayout>
+
+</ScrollView>
